@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<title> FUNDACIÓN PATITAS DE CORAZÓN</title>
+	<link rel="stylesheet" href="Estilos.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+	
+<body>
+	<div id="header">
+		<div class="contenedor">
+		<ul class="menu-fixed">
+			<ul class="nav">
+				<li><a href="index.html">Inicio</a></li> <!-- ya funciona -->
+				<li><a href="">Perros</a>
+					<ul>
+						<li><a href="galeria.html">Galeria </a></li> <!-- ya funciona -->
+						<li><a href="adopta.html">Adopta</a></li> <!-- ya funciona -->
+					</ul>
+				</li>
+				<li><a href="">Gatos</a>
+					<ul>
+						<li><a href="gatos.html">Galeria</a></li> <!-- ya funciona -->
+						<li><a href="adoptagatos.html">Adopta</a></li>
+					</ul>
+				</li>
+				<li><a href="">Nosotros</a>
+					<ul>
+						<li><a href="mision.html">Misión</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</li>
+					
+			</ul>
+		</ul>
+			</div>
+		</div>
+		
+	<div class="contenedor">
+
+	<a href="index.html"> <img src="Imagenes/Logo.png" width= 390px height= 110px></a> <br><br><br><br><br>
+	<div class="containera">
+		<div id="slider1">
+			<div><a href="adopta.html"><img src="Imagenes/encabezadop.png"  width= 930px height= 270px></a></div>
+			<div><a href ="adoptagatos.html"><img src="Imagenes/encabezado.png"  width= 930px height= 270px></a></div>
+			<div><a href="mision.html"><img src="Imagenes/mision.png"  width= 930px height= 270px></a></div>
+		</div>
+	</div><br><br>
+	<script type="text/javascript">
+	$(function(){
+		$('#slider1 div:gt(0)').hide();
+			setInterval(function(){
+				$('#slider1 div:first-child').fadeOut(1000)
+					.next('div').fadeIn(1000)
+					.end().appendTo('#slider1');
+			},4000);
+	})
+	</script> <!--Esto solo es momentanio despues lo cambiare por slideshow-->
+
+	<br><p> ¿Quieres adoptar un perro o un gato? dejame decirte que llegaste al lugar indicado. </p>
+	<p> Bienvenido a nuestra página oficial, un sitio dedicado a la adopción y protección de las mascotas, aquí podras encontrar a tu amigo ideal.</p>
+	<p> ¿Qué es Fundación Patitas de Corazón?</p>
+	<br><p> Somos una fundación que se encarga de rescatar animales de la calle o que sufren de maltrato en el hogar y les buscamos una familia 
+	</p>
+	<p><h3> ¿Quieres ayudarnos?</h3> </p>
+	<p> Ponte en contacto con nosotros a través de nuestro correo electronico o directamente a nuestras instalaciones por medio de nuestro telélono 
+	fijo. Seguro hay algun peludo amiguito que esta esperandote</p>
+	<h3> ¡NO compres mascotas, adopta un amigo!</h3>
+	<p><br>Para más información ve a nuestra seccion de nosotros<br> <!--hasta aqui borra-->
+
+
+	</div>
+
+<div class="footer">
+	<li><a href="index.html">FUNDACIÓN PDC</a></li>
+	<li><a href="contacto.html">Contacto</a></li>
+	      <br><br>Desarrollador: William Figueredo</br></br>
+</div>
+
+</body>
+</html>
